@@ -21,8 +21,8 @@ export default class UI {
                               </p>
                           </figcaption>
                           <footer class="card-footer small hstack justify-content-between">
-                              <span class="badge badge-color">MMORPG</span>
-                              <span class="badge badge-color">PC (Windows)</span>
+                             <span class="badge badge-color">${game.genre}</span>
+                              <span class="badge badge-color">${game.platform}</span>
                           </footer>
                       </div>
                 </div>
