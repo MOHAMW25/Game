@@ -1,23 +1,4 @@
- 
 
-
-let links = document.querySelectorAll("nav .nav-link");
-
-links.forEach(link => {
-    link.addEventListener("click", function() {
-         
-        links.forEach(l => l.classList.remove("active"));
-        
-        this.classList.add("active");
-    });
-});
-
-
-
-
-	
-
-// main.js
 import Game from './game.js';
 import UI from './ui.js';
 
@@ -44,5 +25,16 @@ document.addEventListener('DOMContentLoaded', async () => {
             const game = await Game.fetchGameDetails(gameId);
             UI.displayGameDetails(game);
         }
+    });
+});
+
+let links = document.querySelectorAll("nav .nav-link");
+
+links.forEach(link => {
+    link.addEventListener("click", function() {
+         
+        links.forEach(l => l.classList.remove("active"));
+        
+        this.classList.add("active");
     });
 });
